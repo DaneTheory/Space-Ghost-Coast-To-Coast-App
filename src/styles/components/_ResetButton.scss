@@ -1,0 +1,143 @@
+
+a.reset__text {
+transition: color 0.5s;
+    font-family: $font__main;
+    font-size: 2em;
+    top: 0.1em;
+    font-weight: 100;
+    display: block;
+    position: absolute;
+    z-index: 5;
+    text-decoration: none;
+    width: 6.5em;
+    text-align: center;
+    color: #ffffff;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 30px;
+}
+a.reset__loading {
+  color: rgba(255,255,255,0);
+}
+a.reset__feedback {
+  z-index: 1;
+}
+a.reset__feedback:after {
+    transition: background 0.2s, transform 0.2s, -webkit-transform 0.2s;
+    border-radius: 30px;
+    position: absolute;
+    visibility: hidden;
+    width: 5em;
+    height: 2em;
+    top: 0em;
+    left: 1.1em;
+    content: '';
+    background: rgba(255, 255, 255, 0.9);
+}
+a.reset__text:hover {
+  background: rgba(255,255,255,0.1);
+}
+svg.reset__svg {
+    position: absolute;
+    top: -6.5em;
+    left: -1em;
+    z-index: 3;
+    pointer-events: none;
+    width: 15em;
+    height: 15em;
+    cursor: pointer;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+rect {
+  -webkit-transition: fill 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: fill 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: fill 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -ms-transition: fill 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: fill 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  fill: #3e3f4c;
+}
+path {
+  fill: none;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke: #1ecd97;
+  stroke-dashoffset: 0px;
+}
+path#resetTop,
+path#resetBottom {
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  stroke-dasharray: 295px 1000px;
+}
+.reset__loading-start a.reset__text {
+  color: rgba(255,255,255,0);
+}
+.reset__loading-start a.reset__loading {
+  color: #fff;
+}
+.reset__loading-start a.reset__feedback:after {
+  visibility: visible;
+  background: rgba(255,255,255,0);
+  -webkit-transform: scale(1.5, 2);
+  -moz-transform: scale(1.5, 2);
+  -o-transform: scale(1.5, 2);
+  -ms-transform: scale(1.5, 2);
+  transform: scale(1.5, 2);
+}
+.reset__loading-start #resetTop,
+.rest__loading-start #resetBottom {
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  stroke-dasharray: 10px 1000px;
+}
+.reset__loading-progress #resetTop,
+.reset__loading-progress #resetBottom {
+  -webkit-transition: stroke-dashoffset 1s linear, stroke-dasharray 1s linear;
+  -moz-transition: stroke-dashoffset 1s linear, stroke-dasharray 1s linear;
+  -o-transition: stroke-dashoffset 1s linear, stroke-dasharray 1s linear;
+  -ms-transition: stroke-dashoffset 1s linear, stroke-dasharray 1s linear;
+  transition: stroke-dashoffset 1s linear, stroke-dasharray 1s linear;
+  stroke-dasharray: 10px 1000px;
+  stroke-dashoffset: -150px;
+}
+.reset__loading-end a.reset__loading {
+  color: rgba(255,255,255,0);
+}
+.reset__loading-end #resetTop,
+.reset__loading-end #resetBottom {
+  stroke: #f5f6f7;
+}
+.reset__loading-end #resetTop {
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  stroke-dasharray: 30px 1000px;
+  stroke-dashoffset: -518px;
+}
+.reset__loading-end #resetBottom {
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  stroke-dasharray: 10px 1000px;
+  stroke-dashoffset: -490px;
+}
+.reset__loading-end rect {
+  fill: #1ecd97 !important;
+}
+
+#reset__button {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,163 @@
+.content__calculation__wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+
+.location__intro {
+
+    h3 {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 5vw;
+    position: absolute;
+    text-transform: uppercase;
+    margin: 0.2em 0.2em;
+    right: 0;
+    line-height: 1em;
+    color: whitesmoke;
+    display: block;
+    text-align: right;
+    width: 20%;
+        text-shadow: 1px 1px 1px black;
+    transition: all 200ms ease-in-out;
+    }
+}
+
+.location__message {
+    position: absolute;
+    right: 0.4em;
+        text-shadow: 1px 1px 1px black;
+    transition: all 200ms ease-in-out;
+
+    h3 {
+        font-family: $font__main;
+        font-size: 2.5vw;
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: #2EC4B6;
+        white-space: nowrap;
+        transition: all 200ms ease-in-out;
+    }
+}
+
+.location__name {
+    position: absolute;
+    right: 0.5em;
+    top: 3em;
+        text-shadow: 1px 1px 1px black;
+    transition: all 200ms ease-in-out;
+
+    h4 {
+        font-family: $font__sub;
+        color: $grey;
+        font-weight: 100;
+        font-size: 1.2em;
+        white-space: nowrap;
+        transition: all 200ms ease-in-out;
+    }
+}
+
+.location__latitude {
+    position: absolute;
+    top: 5em;
+    right: 1em;
+        text-shadow: 1px 1px 1px black;
+    transition: all 200ms ease-in-out;
+
+    h4 {
+        font-family: $font__sub;
+      color: #2EC4B6;
+        right: 0.5em;
+        transition: all 200ms ease-in-out;
+    }
+
+    span {
+        font-family: $font__sub;
+        color: $orange;
+        font-weight: 100;
+        margin-left: -0.5em;
+        transition: all 200ms ease-in-out;
+    }
+}
+
+.location__longitude {
+    position: absolute;
+    top: 8em;
+    right: 1em;
+        text-shadow: 1px 1px 1px black;
+    transition: all 200ms ease-in-out;
+
+    h4 {
+        font-family: $font__sub;
+        color: #2EC4B6;
+        right: 0.5em;
+        transition: all 200ms ease-in-out;
+    }
+
+    span {
+        font-family: $font__sub;
+        color: $orange;
+        font-weight: 100;
+        transition: all 200ms ease-in-out;
+    }
+}
+
+.location__heading {
+    transition: all 200ms ease-in-out;
+
+    h3 {
+        font-family: $font__main;
+        font-size: 2.5vw;
+        text-transform: uppercase;
+        line-height: 1em;
+        color: $green;
+        margin: auto auto;
+        transition: all 200ms ease-in-out;
+        text-decoration: overline;
+    }
+}
+
+.location__two__wrapper {
+    position: absolute;
+    right: 0;
+    top: 13em;
+    transition: all 200ms ease-in-out;
+}
+
+.location__total__wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 93vh;
+    margin: auto auto;
+    text-align: center;
+    display: inline-block;
+    transition: all 200ms ease-in-out;
+
+    .location__heading {
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding-top: 1em;
+        text-shadow: 1px 1px 1px black;
+        transition: all 200ms ease-in-out;
+    }
+}
+
+
+.total__distance {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+        text-shadow: 1px 1px 1px black;
+    transition: all 200ms ease-in-out;
+
+    span {
+      color: white;
+      font-size: 1.5em;
+      font-family: $font__main;
+  }
+}
